@@ -21,8 +21,7 @@ stages:
   jobs:
   - job: build_test
     displayName: 'Build and test'
-    pool:
-      vmImage: 'Ubuntu-16.04'
+    pool: Default
     steps:
     - task: NodeTool@0
       inputs:
